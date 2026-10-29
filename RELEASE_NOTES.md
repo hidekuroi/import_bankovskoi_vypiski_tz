@@ -7,9 +7,10 @@
 | Платформа | Где | Результат |
 | --- | --- | --- |
 | iOS | iPhone 17 Pro Simulator (iOS 26.5), Xcode 27.1 | Development build. Пройдена вся матрица приёмки, тёмная тема, крупный системный шрифт |
+| iOS, устройство | iPhone 17 (iOS 26.5.2) | Development build, mock по локальной сети. Пройден тот же сценарий, что на симуляторе, всё работает так же |
 | Android | Android Emulator Pixel Fold (Android 15, API 35) | Development build. Пройдена та же матрица приёмки, что на iOS: happy (CSV и PDF), lost_ack с перезапуском, stale_status, delete_failure → повтор → удалено, spoofed и oversize, работа без сервера. Поведение, тексты и счётчики mock — как на iOS |
 
-Физические устройства и release-сборки не проверялись.
+Android на физическом устройстве и release-сборки не проверялись.
 
 ## Разрешения
 

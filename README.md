@@ -153,10 +153,10 @@ kit/               набор кандидата без изменений
 
 | | iOS | Android |
 | --- | --- | --- |
-| Где | iPhone 17 Pro Simulator, iOS 26.5; iPhone SE (3rd gen) Simulator, iOS 18.6; Xcode 27.1 | Android Emulator Pixel Fold (`sdk_gphone64_arm64`), Android 15 (API 35) |
-| Результат | Development build. Вручную пройдены happy (CSV и PDF), lost_ack (с перезапуском), stale_status, delete_failure → happy → deleted, spoofed и oversize, работа без сервера; счётчики mock совпали с ожидаемыми. Тёмная тема; iPhone SE с самым крупным системным шрифтом | Development build. Вручную пройдены те же сценарии, что на iOS: happy (CSV и PDF), lost_ack (с перезапуском), stale_status, delete_failure → happy → deleted, spoofed и oversize, работа без сервера; счётчики mock совпали с ожидаемыми. Поведение и тексты такие же, как на iOS |
+| Где | iPhone 17 (устройство), iOS 26.5.2; iPhone 17 Pro Simulator, iOS 26.5; iPhone SE (3rd gen) Simulator, iOS 18.6; Xcode 27.1 | Android Emulator Pixel Fold (`sdk_gphone64_arm64`), Android 15 (API 35) |
+| Результат | Development build. Вручную пройдены happy (CSV и PDF), lost_ack (с перезапуском), stale_status, delete_failure → happy → deleted, spoofed и oversize, работа без сервера; счётчики mock совпали с ожидаемыми. Тёмная тема; iPhone SE с самым крупным системным шрифтом. На iPhone 17 (по локальной сети, `npm run ios -- --device`) пройдены те же сценарии, всё работает так же, как на симуляторе | Development build. Вручную пройдены те же сценарии, что на iOS: happy (CSV и PDF), lost_ack (с перезапуском), stale_status, delete_failure → happy → deleted, spoofed и oversize, работа без сервера; счётчики mock совпали с ожидаемыми. Поведение и тексты такие же, как на iOS |
 
-Физические устройства не проверялись.
+Android на физическом устройстве не проверялся.
 
 ## Кит не изменён
 
