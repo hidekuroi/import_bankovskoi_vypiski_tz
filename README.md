@@ -1,5 +1,14 @@
 # Импорт банковской выписки — тестовое задание Mobile Engineer
 
+## Видео
+
+| iPhone 17 — все сценарии | iPhone 17 — перезапуск после lost_ack | Android — все сценарии |
+| :---: | :---: | :---: |
+| [![iPhone 17, все сценарии](videos/ios-scenarios.jpg)](videos/ios-scenarios.mp4) | [![iPhone 17, перезапуск](videos/ios-relaunch.jpg)](videos/ios-relaunch.mp4) | [![Android, все сценарии](videos/android-scenarios.jpg)](videos/android-scenarios.mp4) |
+| happy, lost_ack, stale_status, delete_failure, spoofed и oversize · 2:20 | приложение закрыто до ответа и при запуске находит импорт по ключу · 0:28 | те же сценарии, что на iPhone · 1:48 |
+
+Нажмите на кадр, чтобы открыть видео.
+
 React Native 0.88 + TypeScript, Expo SDK 58 (development build, не Expo Go), Expo Router.
 Набор кандидата лежит в [`kit/`](kit) без изменений (проверка — [в конце](#кит-не-изменён)); всё остальное — мобильный клиент.
 
