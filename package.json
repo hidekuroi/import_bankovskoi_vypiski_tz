@@ -1,0 +1,53 @@
+{
+  "name": "statement-import",
+  "version": "1.0.0",
+  "private": true,
+  "main": "expo-router/entry",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "start": "node scripts/dev.mjs start",
+    "ios": "node scripts/dev.mjs run:ios",
+    "android": "node scripts/dev.mjs run:android",
+    "mock": "npm --prefix kit start",
+    "fixtures": "node scripts/fixtures.mjs",
+    "fixtures:oversize": "npm --prefix kit run fixtures:oversize",
+    "test": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test --test-reporter=spec \"tests/**/*.test.ts\"",
+    "test:kit": "npm --prefix kit test",
+    "typecheck": "tsc --noEmit && tsc --noEmit -p tests",
+    "lint": "expo lint",
+    "verify": "npm run typecheck && npm run lint && npm test && npm run test:kit"
+  },
+  "dependencies": {
+    "@react-native-community/netinfo": "12.0.1",
+    "expo": "~58.0.21",
+    "expo-constants": "~58.0.14",
+    "expo-crypto": "~58.0.7",
+    "expo-dev-client": "~58.0.17",
+    "expo-document-picker": "~58.0.4",
+    "expo-file-system": "~58.0.13",
+    "expo-font": "~58.0.11",
+    "expo-haptics": "~58.0.7",
+    "expo-linking": "~58.0.15",
+    "expo-router": "~58.0.28",
+    "expo-secure-store": "~58.0.2",
+    "expo-status-bar": "~58.0.4",
+    "expo-symbols": "~58.0.4",
+    "expo-system-ui": "~58.0.7",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-native": "0.88.1",
+    "react-native-reanimated": "4.7.1",
+    "react-native-safe-area-context": "~5.10.1",
+    "react-native-screens": "~4.30.0",
+    "react-native-worklets": "0.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "~24.10.0",
+    "@types/react": "~19.3.0",
+    "eslint": "^9.39.5",
+    "eslint-config-expo": "~58.0.4",
+    "typescript": "~6.0.3"
+  }
+}
