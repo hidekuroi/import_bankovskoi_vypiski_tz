@@ -2,12 +2,25 @@
 
 ## Видео
 
-| iPhone 17 — все сценарии | iPhone 17 — перезапуск после lost_ack | Android — все сценарии |
-| :---: | :---: | :---: |
-| [![iPhone 17, все сценарии](videos/ios-scenarios.jpg)](videos/ios-scenarios.mp4) | [![iPhone 17, перезапуск](videos/ios-relaunch.jpg)](videos/ios-relaunch.mp4) | [![Android, все сценарии](videos/android-scenarios.jpg)](videos/android-scenarios.mp4) |
-| happy, lost_ack, stale_status, delete_failure, spoofed и oversize · 2:20 | приложение закрыто до ответа и при запуске находит импорт по ключу · 0:28 | те же сценарии, что на iPhone · 1:48 |
+<table>
+  <tr>
+    <th>iPhone 17 — все сценарии</th>
+    <th>iPhone 17 — перезапуск после lost_ack</th>
+    <th>Android — все сценарии</th>
+  </tr>
+  <tr>
+    <td><video src="https://github.com/user-attachments/assets/1a76b1af-5876-4c4a-8488-6251c544ffdf" controls muted width="240"></video></td>
+    <td><video src="https://github.com/user-attachments/assets/e01c6424-1def-4276-bcf8-dd99ecd79118" controls muted width="240"></video></td>
+    <td><video src="https://github.com/user-attachments/assets/53555889-9461-4b30-b726-48cee077dc8d" controls muted width="240"></video></td>
+  </tr>
+  <tr>
+    <td align="center">happy, lost_ack, stale_status, delete_failure, spoofed и oversize · 2:20</td>
+    <td align="center">приложение закрыто до ответа и при запуске находит импорт по ключу · 0:28</td>
+    <td align="center">те же сценарии, что на iPhone · 1:48</td>
+  </tr>
+</table>
 
-Нажмите на кадр, чтобы открыть видео.
+Видео также лежат в [`videos/`](videos).
 
 React Native 0.88 + TypeScript, Expo SDK 58 (development build, не Expo Go), Expo Router.
 Набор кандидата лежит в [`kit/`](kit) без изменений (проверка — [в конце](#кит-не-изменён)); всё остальное — мобильный клиент.
